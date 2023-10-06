@@ -24,6 +24,22 @@ set(SOURCE_FILES
         Chapter_2/CurrentWeatherConditionsDisplay.h
         Chapter_2/MoreComplexDisplay.cc
         Chapter_2/MoreComplexDisplay.h
+        Chapter_3/Beverage.cc
+        Chapter_3/Beverage.h
+        Chapter_3/Condiments/CondimentDecorator.h
+        Chapter_3/Drinks/Espresso.cc
+        Chapter_3/Drinks/Espresso.h
+        Chapter_3/Drinks/HouseBlend.cc
+        Chapter_3/Drinks/HouseBlend.h
+        Chapter_3/Condiments/Mocha.cc
+        Chapter_3/Condiments/Mocha.h
+        Chapter_3/Condiments/Soy.cc
+        Chapter_3/Condiments/Soy.h
+        Chapter_3/Condiments/Whip.cc
+        Chapter_3/Condiments/Whip.h
+        Chapter_3/Drinks/DarkRoast.cc
+        Chapter_3/Drinks/DarkRoast.h
+        Chapter_3/Condiments/CondimentDecorator.cc
 )
 
-add_library(source STATIC ${HEADER_FILES} ${SOURCE_FILES})
+add_library(source STATIC ${SOURCE_FILES})

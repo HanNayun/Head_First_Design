@@ -5,6 +5,7 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 add_executable(test_run
         test_cases/Chapter_1/Test_Duck.cc
         test_cases/Chapter_2/Test_WeatherData.cc
+        test_cases/Chapter_3/Test_Decorator.cc
 )
 
 target_link_libraries(test_run source)

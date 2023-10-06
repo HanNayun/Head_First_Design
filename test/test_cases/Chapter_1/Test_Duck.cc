@@ -5,9 +5,9 @@
 
 TEST(Test_Duck, Test_Default_Behavior)
 {
-    auto duck = Duck();
     std::cout << "Test output Test_Duck.Test_Default_Behavior:" << std::endl
               << "============================================" << std::endl;
+    auto duck = Duck();
     duck.PerformFly(); // I'm flying with wings!
     duck.PerformQuack(); // QuackLoud
 
@@ -23,8 +23,8 @@ TEST(Test_Duck, Test_Change_Behavior)
     duck.PerformFly(); // I'm flying with wings!
     duck.PerformQuack(); // QuackLoud
 
-    FlyBehavior *fly_behavior = new CanNotFly();
-    QuackBehavior *quack_behavior = new Squeak();
+    FlyBehavior* fly_behavior = new CanNotFly();
+    QuackBehavior* quack_behavior = new Squeak();
     duck.SetFlyBehavior(fly_behavior);
     duck.SetQuackBehavior(quack_behavior);
 
